@@ -28,7 +28,7 @@ sudo systemctl restart auditd
 ## 3. Test detection
 
 sudo touch /etc/testfiles
-![Restart auditd](screenshots/day6-audit-evidenc.png)
+![Restart auditd](screenshots/day6-audit-evidence.png)
 
 ## 4. Verify with ausearch
 
