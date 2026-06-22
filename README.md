@@ -8,28 +8,29 @@ Configure auditd to monitor `/etc/` for file writes + attribute changes and veri
 - Ubuntu 24.04 
 - auditd 4.0.3
 
-## Commands Run
+# Commands Run
 
-### 1. Add FIM rule to watch /etc/
+## 1. Add FIM rule to watch /etc/
 
 sudo nano /etc/audit/rules.d/audit.rules
 
-### Added:
+## Added:
 
 -w /etc/ -p wa -k etc_changes
-![Restart auditd](screenshots/dday6-rule-added.png)
+![Restart auditd](screenshots/day6-fim-rule-syntax.png)
 
-### 2. Load rules + restart auditd
+## 2. Load rules + restart auditd
 
 sudo augenrules --load
 sudo systemctl restart auditd
 ![Restart auditd](screenshots/day6-auditd-restart.png)
 
-### 3. Test detection
+## 3. Test detection
 
 sudo touch /etc/testfiles
+![Restart auditd](screenshots/day6-audit-evidence.png)
 
-### 4. Verify with ausearch
+## 4. Verify with ausearch
 
 sudo ausearch -f /etc/testfiles -i
 ![Restart auditd](screenshots/day6-audit-evidence.png)
