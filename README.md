@@ -8,7 +8,7 @@ Configure auditd to monitor `/etc/` for file writes + attribute changes and veri
 - Ubuntu 24.04 
 - auditd 4.0.3
 
-# Commands Run
+## Commands Run
 
 ## 1. Add FIM rule to watch /etc/
 
