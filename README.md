@@ -33,7 +33,7 @@ sudo touch /etc/testfiles
 ## 4. Verify with ausearch
 
 sudo ausearch -f /etc/testfiles -i
-![Restart auditd](screenshots/day6-audit-evidence1.png)
+![Restart auditd](screenshots/day6-audit-evidenc.png)
 
 ## Key Forensic Evidence
 type=PATH msg=audit(06/21/2026 10:46:53.501:800) : name=/etc/testfiles nametype=CREATE mode=file,644 ouid=root
